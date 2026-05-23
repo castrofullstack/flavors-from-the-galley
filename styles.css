@@ -417,13 +417,14 @@ h3 {
   box-shadow: var(--shadow);
 }
 
-.recipe-photo iframe {
+.recipe-photo img {
   display: block;
   width: 100%;
-  height: min(34rem, 72vw);
-  border: 0;
+  aspect-ratio: 16 / 9;
   border-radius: 6px;
-  background: white;
+  object-fit: cover;
+  object-position: center;
+  background: var(--mist);
 }
 
 .recipe-photo figcaption {
@@ -479,12 +480,14 @@ h3 {
 .method-list li {
   counter-increment: method;
   display: grid;
-  grid-template-columns: 2.75rem minmax(0, 1fr);
+  grid-template-columns: 2.25rem minmax(0, 1fr);
+  align-items: start;
   gap: 1rem;
 }
 
 .method-list li::before {
   content: counter(method);
+  flex: 0 0 auto;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -494,6 +497,16 @@ h3 {
   color: white;
   background: var(--navy);
   font-weight: 800;
+}
+
+.method-step {
+  display: block;
+  min-width: 0;
+  line-height: 1.65;
+}
+
+.method-list li strong {
+  margin-right: 0.25rem;
 }
 
 .tips-section {
