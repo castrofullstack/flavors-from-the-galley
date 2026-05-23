@@ -564,19 +564,35 @@ h3 {
   }
 
   body {
-    color: #111;
+    color: var(--ink);
     background: white !important;
     font-size: 10.5pt;
     line-height: 1.35;
     overflow: visible;
   }
 
-  .site-header,
   .main-nav,
   .recipe-photo,
   .hero-actions,
   .site-footer {
     display: none !important;
+  }
+
+  .site-header {
+    position: static;
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: auto;
+    margin-bottom: 0.18in;
+    padding: 0;
+    border: 0;
+    background: white !important;
+    backdrop-filter: none;
+  }
+
+  .brand-mark {
+    width: 0.72in;
   }
 
   .recipe-hero,
@@ -594,7 +610,7 @@ h3 {
 
   .recipe-copy h1 {
     max-width: none;
-    color: #111;
+    color: var(--green);
     font-size: 30pt;
     line-height: 1.05;
   }
@@ -602,14 +618,14 @@ h3 {
   .eyebrow,
   .menu-kicker {
     margin-bottom: 0.06in;
-    color: #555;
+    color: var(--gold);
     font-size: 8pt;
   }
 
   .recipe-deck {
     max-width: none;
     margin: 0.12in 0 0.16in;
-    color: #222;
+    color: var(--ink);
     font-size: 11pt;
   }
 
@@ -625,8 +641,8 @@ h3 {
   .recipe-meta span {
     min-height: auto;
     padding: 0.08in 0.12in;
-    border-right: 1px solid #bbb;
-    color: #111;
+    border-right: 1px solid rgba(16, 40, 59, 0.32);
+    color: var(--ink);
     background: white;
   }
 
@@ -635,7 +651,7 @@ h3 {
   }
 
   .recipe-meta strong {
-    color: #111;
+    color: var(--gold);
     font-size: 7.5pt;
   }
 
@@ -658,7 +674,7 @@ h3 {
 
   .recipe-layout h2,
   .tips-section h2 {
-    color: #111;
+    color: var(--green);
     font-size: 18pt;
     line-height: 1.1;
   }
@@ -673,13 +689,13 @@ h3 {
   .method-list li,
   .tips-list li {
     padding: 0.055in 0;
-    border-top: 1px solid #ddd;
-    color: #111;
+    border-top: 1px solid rgba(16, 40, 59, 0.18);
+    color: var(--ink);
   }
 
   .ingredient-list strong,
   .method-list strong {
-    color: #111;
+    color: var(--green);
   }
 
   .method-list li {
@@ -693,7 +709,7 @@ h3 {
     width: 0.2in;
     height: 0.2in;
     color: white;
-    background: #111 !important;
+    background: var(--navy) !important;
     font-size: 8pt;
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
