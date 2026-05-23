@@ -547,3 +547,180 @@ h3 {
     min-height: auto;
   }
 }
+
+@media print {
+  @page {
+    margin: 0.55in;
+    size: letter;
+  }
+
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    color: #111;
+    background: white !important;
+    font-size: 10.5pt;
+    line-height: 1.35;
+    overflow: visible;
+  }
+
+  .site-header,
+  .main-nav,
+  .recipe-photo,
+  .hero-actions,
+  .site-footer {
+    display: none !important;
+  }
+
+  .recipe-hero,
+  .section,
+  .tips-section {
+    padding: 0 !important;
+    border: 0 !important;
+    background: white !important;
+  }
+
+  .recipe-hero {
+    display: block;
+    margin-bottom: 0.22in;
+  }
+
+  .recipe-copy h1 {
+    max-width: none;
+    color: #111;
+    font-size: 30pt;
+    line-height: 1.05;
+  }
+
+  .eyebrow,
+  .menu-kicker {
+    margin-bottom: 0.06in;
+    color: #555;
+    font-size: 8pt;
+  }
+
+  .recipe-deck {
+    max-width: none;
+    margin: 0.12in 0 0.16in;
+    color: #222;
+    font-size: 11pt;
+  }
+
+  .recipe-meta {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+    margin: 0;
+    border: 1px solid #bbb;
+    background: white;
+  }
+
+  .recipe-meta span {
+    min-height: auto;
+    padding: 0.08in 0.12in;
+    border-right: 1px solid #bbb;
+    color: #111;
+    background: white;
+  }
+
+  .recipe-meta span:last-child {
+    border-right: 0;
+  }
+
+  .recipe-meta strong {
+    color: #111;
+    font-size: 7.5pt;
+  }
+
+  .recipe-layout {
+    display: grid !important;
+    grid-template-columns: 0.82fr 1.18fr;
+    gap: 0.28in;
+    margin-top: 0.18in !important;
+    background: white !important;
+  }
+
+  .ingredients-panel,
+  .method-panel {
+    padding: 0 !important;
+    border-radius: 0;
+    background: white !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .recipe-layout h2,
+  .tips-section h2 {
+    color: #111;
+    font-size: 18pt;
+    line-height: 1.1;
+  }
+
+  .ingredient-list,
+  .method-list,
+  .tips-list {
+    margin-top: 0.08in;
+  }
+
+  .ingredient-list li,
+  .method-list li,
+  .tips-list li {
+    padding: 0.055in 0;
+    border-top: 1px solid #ddd;
+    color: #111;
+  }
+
+  .ingredient-list strong,
+  .method-list strong {
+    color: #111;
+  }
+
+  .method-list li {
+    grid-template-columns: 0.24in minmax(0, 1fr);
+    gap: 0.1in;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .method-list li::before {
+    width: 0.2in;
+    height: 0.2in;
+    color: white;
+    background: #111 !important;
+    font-size: 8pt;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .method-step {
+    line-height: 1.35;
+  }
+
+  .tips-section {
+    display: grid !important;
+    grid-template-columns: 0.82fr 1.18fr;
+    gap: 0.28in;
+    margin-top: 0.24in !important;
+  }
+
+  .tips-list {
+    columns: 2;
+    column-gap: 0.24in;
+  }
+
+  .tips-list li {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  a[href]::after {
+    content: "";
+  }
+}
