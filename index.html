@@ -11,9 +11,29 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <svg aria-hidden="true" class="logo-defs" focusable="false">
+      <symbol id="galley-logo" viewBox="0 0 220 220">
+        <circle cx="110" cy="110" r="102" fill="#fffdf8" stroke="#163d24" stroke-width="7"/>
+        <circle cx="110" cy="110" r="91" fill="none" stroke="#b98420" stroke-width="3"/>
+        <circle cx="110" cy="110" r="83" fill="none" stroke="#073757" stroke-width="2" opacity="0.35"/>
+        <path d="M61 80c9-16 22-25 38-25 2-17 24-17 27 0 16 0 30 9 38 25" fill="none" stroke="#073757" stroke-width="8" stroke-linecap="round"/>
+        <circle cx="84" cy="68" r="12" fill="#fffdf8" stroke="#073757" stroke-width="6"/>
+        <circle cx="110" cy="57" r="15" fill="#fffdf8" stroke="#073757" stroke-width="6"/>
+        <circle cx="136" cy="68" r="12" fill="#fffdf8" stroke="#073757" stroke-width="6"/>
+        <path d="M70 101h80" stroke="#b98420" stroke-width="6" stroke-linecap="round"/>
+        <path d="M82 113c8 36 27 51 55 0" fill="none" stroke="#073757" stroke-width="7" stroke-linecap="round"/>
+        <path d="M78 160h64" stroke="#163d24" stroke-width="8" stroke-linecap="round"/>
+        <path d="M66 176h88" stroke="#163d24" stroke-width="5" stroke-linecap="round"/>
+        <path d="M72 187h76" stroke="#b98420" stroke-width="4" stroke-linecap="round"/>
+        <text x="110" y="145" text-anchor="middle" font-family="Georgia, serif" font-size="42" font-weight="700" fill="#163d24">Flavors</text>
+        <text x="110" y="154" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="700" letter-spacing="2" fill="#073757">FROM THE</text>
+        <text x="110" y="205" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#073757">GALLEY</text>
+      </symbol>
+    </svg>
+
     <header class="site-header">
       <a class="brand-mark" href="#top" aria-label="Flavors from the Galley home">
-        <img data-logo alt="Flavors from the Galley logo">
+        <svg class="logo-art" role="img" aria-label="Flavors from the Galley logo"><use href="#galley-logo"></use></svg>
       </a>
       <nav class="main-nav" aria-label="Main navigation">
         <a href="#menu">Menu</a>
@@ -26,7 +46,7 @@
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-media" aria-hidden="true">
-          <img data-logo alt="">
+          <svg class="logo-art"><use href="#galley-logo"></use></svg>
         </div>
         <div class="hero-copy">
           <p class="eyebrow">Coastal provisions | Chef-led comfort | Quality assured</p>
@@ -43,98 +63,42 @@
       </section>
 
       <section class="section intro-band" aria-label="Brand pillars">
-        <div class="pillar">
-          <span>01</span>
-          <strong>Galley classics</strong>
-          <p>Comforting, generous dishes with a clean coastal point of view.</p>
-        </div>
-        <div class="pillar">
-          <span>02</span>
-          <strong>Prepared with care</strong>
-          <p>Menus made for dependable service, easy hosting, and repeat cravings.</p>
-        </div>
-        <div class="pillar">
-          <span>03</span>
-          <strong>Built to grow</strong>
-          <p>Ready for pop-ups, catering, recipes, products, or online ordering.</p>
-        </div>
+        <div class="pillar"><span>01</span><strong>Galley classics</strong><p>Comforting, generous dishes with a clean coastal point of view.</p></div>
+        <div class="pillar"><span>02</span><strong>Prepared with care</strong><p>Menus made for dependable service, easy hosting, and repeat cravings.</p></div>
+        <div class="pillar"><span>03</span><strong>Built to grow</strong><p>Ready for pop-ups, catering, recipes, products, or online ordering.</p></div>
       </section>
 
       <section class="section menu-section" id="menu">
-        <div class="section-heading">
-          <p class="eyebrow">First draft menu direction</p>
-          <h2>From the Galley</h2>
-        </div>
+        <div class="section-heading"><p class="eyebrow">First draft menu direction</p><h2>From the Galley</h2></div>
         <div class="menu-grid">
-          <article class="menu-item">
-            <p class="menu-kicker">Signature</p>
-            <h3>Anchor Plate</h3>
-            <p>Grilled catch, citrus herbs, buttered rice, market vegetables.</p>
-          </article>
-          <article class="menu-item">
-            <p class="menu-kicker">Comfort</p>
-            <h3>Harbor Chowder</h3>
-            <p>Creamy seafood stew, roasted corn, potatoes, herbs, toasted bread.</p>
-          </article>
-          <article class="menu-item">
-            <p class="menu-kicker">Shareable</p>
-            <h3>Galley Board</h3>
-            <p>Smoked fish spread, pickled vegetables, crackers, olives, lemon.</p>
-          </article>
-          <article class="menu-item">
-            <p class="menu-kicker">Sweet</p>
-            <h3>Captain's Cake</h3>
-            <p>Rum-kissed spice cake, salted caramel, vanilla cream.</p>
-          </article>
+          <article class="menu-item"><p class="menu-kicker">Signature</p><h3>Anchor Plate</h3><p>Grilled catch, citrus herbs, buttered rice, market vegetables.</p></article>
+          <article class="menu-item"><p class="menu-kicker">Comfort</p><h3>Harbor Chowder</h3><p>Creamy seafood stew, roasted corn, potatoes, herbs, toasted bread.</p></article>
+          <article class="menu-item"><p class="menu-kicker">Shareable</p><h3>Galley Board</h3><p>Smoked fish spread, pickled vegetables, crackers, olives, lemon.</p></article>
+          <article class="menu-item"><p class="menu-kicker">Sweet</p><h3>Captain's Cake</h3><p>Rum-kissed spice cake, salted caramel, vanilla cream.</p></article>
         </div>
       </section>
 
       <section class="section story-section" id="story">
-        <div>
-          <p class="eyebrow">The shape of the brand</p>
-          <h2>A polished nautical kitchen with a generous table.</h2>
-        </div>
-        <p>
-          The logo already gives us a strong direction: deep green, navy, rope gold, chef whites,
-          and a premium seal-of-quality feeling. The site should feel sturdy and appetizing,
-          with enough elegance for catering and enough warmth for recipes, prepared meals, or events.
-        </p>
+        <div><p class="eyebrow">The shape of the brand</p><h2>A polished nautical kitchen with a generous table.</h2></div>
+        <p>The logo already gives us a strong direction: deep green, navy, rope gold, chef whites, and a premium seal-of-quality feeling. The site should feel sturdy and appetizing, with enough elegance for catering and enough warmth for recipes, prepared meals, or events.</p>
       </section>
 
       <section class="section catering-section" id="catering">
-        <div class="section-heading">
-          <p class="eyebrow">Next page to build</p>
-          <h2>Catering and private galley service</h2>
-        </div>
+        <div class="section-heading"><p class="eyebrow">Next page to build</p><h2>Catering and private galley service</h2></div>
         <div class="service-list">
-          <a href="mailto:hello@flavorsfromthegalley.com?subject=Catering%20Inquiry">
-            <span>Private dinners</span>
-            <strong>Plan a table</strong>
-          </a>
-          <a href="mailto:hello@flavorsfromthegalley.com?subject=Event%20Inquiry">
-            <span>Small events</span>
-            <strong>Build a menu</strong>
-          </a>
-          <a href="mailto:hello@flavorsfromthegalley.com?subject=Product%20Inquiry">
-            <span>Prepared goods</span>
-            <strong>Stock the galley</strong>
-          </a>
+          <a href="mailto:hello@flavorsfromthegalley.com?subject=Catering%20Inquiry"><span>Private dinners</span><strong>Plan a table</strong></a>
+          <a href="mailto:hello@flavorsfromthegalley.com?subject=Event%20Inquiry"><span>Small events</span><strong>Build a menu</strong></a>
+          <a href="mailto:hello@flavorsfromthegalley.com?subject=Product%20Inquiry"><span>Prepared goods</span><strong>Stock the galley</strong></a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer" id="contact">
       <div>
-        <img data-logo alt="Flavors from the Galley logo">
+        <svg class="logo-art" role="img" aria-label="Flavors from the Galley logo"><use href="#galley-logo"></use></svg>
         <p>Flavors from the Galley</p>
       </div>
       <a href="mailto:hello@flavorsfromthegalley.com">hello@flavorsfromthegalley.com</a>
     </footer>
-    <script>
-      const logo = 'data:image/jpeg;base64,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';
-      document.querySelectorAll('[data-logo]').forEach((image) => {
-        image.src = logo;
-      });
-    </script>
   </body>
 </html>
