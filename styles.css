@@ -317,6 +317,11 @@ h3 {
   background: var(--paper);
 }
 
+.recipe-card-list {
+  display: grid;
+  gap: 1rem;
+}
+
 .recipe-card {
   display: grid;
   grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.5fr) auto;
@@ -494,6 +499,16 @@ h3 {
 .recipe-layout h2,
 .tips-section h2 {
   font-size: clamp(2.3rem, 5vw, 4.25rem);
+}
+
+.ingredients-panel h3 {
+  margin-top: 1.5rem;
+  color: var(--navy);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .ingredient-list,
