@@ -489,16 +489,6 @@ h3 {
   background-repeat: no-repeat;
 }
 
-.pizza-dough-art {
-  background:
-    radial-gradient(ellipse at 50% 57%, rgba(222, 174, 95, 0.98) 0 26%, rgba(195, 133, 55, 0.88) 27% 31%, transparent 32%),
-    radial-gradient(ellipse at 31% 47%, rgba(250, 236, 198, 0.98) 0 18%, rgba(221, 172, 92, 0.9) 19% 24%, transparent 25%),
-    radial-gradient(ellipse at 70% 43%, rgba(247, 230, 186, 0.98) 0 19%, rgba(210, 158, 79, 0.9) 20% 25%, transparent 26%),
-    radial-gradient(circle at 16% 26%, rgba(255, 253, 248, 0.8) 0 1.5%, transparent 1.7%),
-    radial-gradient(circle at 82% 72%, rgba(255, 253, 248, 0.75) 0 1.6%, transparent 1.8%),
-    linear-gradient(135deg, #f9efd8 0 24%, #fffaf0 25% 58%, #d8e6d5 59% 100%);
-}
-
 .recipe-photo-real {
   position: absolute;
   inset: 0;
