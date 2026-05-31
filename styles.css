@@ -466,14 +466,60 @@ h3 {
   box-shadow: var(--shadow);
 }
 
-.recipe-photo img {
+.recipe-photo img,
+.recipe-photo-object,
+.recipe-photo-art {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
   border-radius: 6px;
   object-fit: cover;
   object-position: center;
-  background: var(--mist);
+  background:
+    radial-gradient(circle at 52% 43%, rgba(255, 255, 248, 0.96) 0 9%, transparent 10%),
+    radial-gradient(circle at 50% 52%, #d9efbb 0 38%, #c7e4a0 39% 52%, #eff6dc 53% 67%, transparent 68%),
+    linear-gradient(135deg, #f7f3de 0 18%, #fffaf0 19% 56%, #dcecc1 57% 100%);
+}
+
+.recipe-photo-art {
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pizza-dough-art {
+  background:
+    radial-gradient(ellipse at 50% 57%, rgba(222, 174, 95, 0.98) 0 26%, rgba(195, 133, 55, 0.88) 27% 31%, transparent 32%),
+    radial-gradient(ellipse at 31% 47%, rgba(250, 236, 198, 0.98) 0 18%, rgba(221, 172, 92, 0.9) 19% 24%, transparent 25%),
+    radial-gradient(ellipse at 70% 43%, rgba(247, 230, 186, 0.98) 0 19%, rgba(210, 158, 79, 0.9) 20% 25%, transparent 26%),
+    radial-gradient(circle at 16% 26%, rgba(255, 253, 248, 0.8) 0 1.5%, transparent 1.7%),
+    radial-gradient(circle at 82% 72%, rgba(255, 253, 248, 0.75) 0 1.6%, transparent 1.8%),
+    linear-gradient(135deg, #f9efd8 0 24%, #fffaf0 25% 58%, #d8e6d5 59% 100%);
+}
+
+.recipe-photo-real {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+.recipe-photo-fallback {
+  position: absolute;
+  right: 1rem;
+  bottom: 0.85rem;
+  z-index: 0;
+  max-width: min(15rem, calc(100% - 2rem));
+  color: var(--green);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1rem, 2vw, 1.45rem);
+  font-weight: 700;
+  line-height: 1.05;
+  text-align: right;
 }
 
 .recipe-photo figcaption {
