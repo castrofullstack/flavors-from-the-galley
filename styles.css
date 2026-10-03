@@ -847,3 +847,26 @@ a:focus-visible {
   outline: 3px solid var(--ocean);
   outline-offset: 4px;
 }
+
+#story {
+  scroll-margin-top: 6rem;
+}
+#story h2 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.05;
+}
+.story-copy {
+  max-width: 42rem;
+  color: #34536d;
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  line-height: 1.75;
+}
+.story-copy p {
+  margin: 0 0 1.25rem;
+}
+.story-copy p:last-child {
+  margin-bottom: 0;
+}
+.story-copy strong {
+  color: var(--navy);
+}
