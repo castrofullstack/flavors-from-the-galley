@@ -870,3 +870,53 @@ a:focus-visible {
 .story-copy strong {
   color: var(--navy);
 }
+
+.print-recipe {
+  margin-top: 1.25rem;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+.print-recipe:hover {
+  background: #0a416e;
+}
+@media print {
+  .print-recipe,
+  .recipe-note-section {
+    display: none !important;
+  }
+  /* Normal block flow allows long recipes to paginate naturally. */
+  .recipe-layout,
+  .tips-section {
+    display: block !important;
+  }
+  .ingredients-panel,
+  .method-panel {
+    break-inside: auto;
+    page-break-inside: auto;
+    margin-bottom: 0.18in;
+  }
+  .recipe-meta {
+    grid-template-columns: repeat(auto-fit, minmax(1.2in, 1fr));
+  }
+  .ingredients-panel h3,
+  .method-panel h3 {
+    margin-top: 0.14in !important;
+    font-size: 11pt;
+    line-height: 1.2;
+  }
+  h1, h2, h3, .eyebrow {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+  .ingredient-list li {
+    break-inside: avoid;
+  }
+  p {
+    orphans: 3;
+    widows: 3;
+  }
+  .tips-list {
+    columns: auto;
+  }
+}
