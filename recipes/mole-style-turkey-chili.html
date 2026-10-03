@@ -2,11 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mole-Style Turkey Chili | Flavors from the Galley</title>
     <meta name="description" content="Ground turkey, lentil and sweet potato chili with a mole-style porter finish, dark chocolate, and molasses. Serves 8-10.">
     <link rel="stylesheet" href="../styles.css?v=navigation-20261003">
-      <script src="../print-recipe.js" defer></script>
+      <style>
+      @media print {
+        .print-recipe, .main-nav, .recipe-photo, .recipe-note-section, .site-footer { display: none !important; }
+        html, body { height: auto !important; overflow: visible !important; }
+        main, .recipe-hero, .recipe-layout, .tips-section { display: block !important; min-height: 0 !important; height: auto !important; }
+        .section, .recipe-hero { padding: 0 !important; background: white !important; }
+        .ingredients-panel, .method-panel { display: block !important; break-inside: auto !important; page-break-inside: auto !important; padding: 0 !important; }
+        .recipe-layout { margin-top: 0.18in !important; }
+        .recipe-copy h1 { font-size: 26pt !important; line-height: 1.1 !important; max-width: none !important; }
+        .ingredient-list, .method-list, .tips-list { display: block !important; }
+        .tips-list { columns: auto !important; }
+        .ingredient-list li, .method-list li { break-inside: auto !important; page-break-inside: auto !important; }
+        h2, h3 { break-after: avoid !important; }
+      }
+    </style>
   </head>
   <body>
     <header class="site-header">
@@ -26,7 +41,7 @@
         <div class="recipe-copy">
           <p class="eyebrow">Shipshape comfort food</p>
           <h1 id="recipe-title">Mole-Style Turkey Chili</h1>
-          <button class="button primary print-recipe" type="button">Print recipe</button>
+          <button class="button primary print-recipe" type="button" onclick="window.print()">Print recipe</button>
           <p class="recipe-deck">Ground turkey, lentil &amp; sweet potato chili with a mole-style porter finish.</p>
           <div class="recipe-meta" aria-label="Recipe details">
             <span><strong>Prep time</strong> 20 minutes</span>

@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
@@ -33,7 +34,21 @@
         font-size: 0.82rem;
       }
     </style>
-      <script src="../print-recipe.js" defer></script>
+      <style>
+      @media print {
+        .print-recipe, .main-nav, .recipe-photo, .recipe-note-section, .site-footer { display: none !important; }
+        html, body { height: auto !important; overflow: visible !important; }
+        main, .recipe-hero, .recipe-layout, .tips-section { display: block !important; min-height: 0 !important; height: auto !important; }
+        .section, .recipe-hero { padding: 0 !important; background: white !important; }
+        .ingredients-panel, .method-panel { display: block !important; break-inside: auto !important; page-break-inside: auto !important; padding: 0 !important; }
+        .recipe-layout { margin-top: 0.18in !important; }
+        .recipe-copy h1 { font-size: 26pt !important; line-height: 1.1 !important; max-width: none !important; }
+        .ingredient-list, .method-list, .tips-list { display: block !important; }
+        .tips-list { columns: auto !important; }
+        .ingredient-list li, .method-list li { break-inside: auto !important; page-break-inside: auto !important; }
+        h2, h3 { break-after: avoid !important; }
+      }
+    </style>
   </head>
   <body>
     <header class="site-header">
@@ -53,7 +68,7 @@
         <div class="recipe-copy">
           <p class="eyebrow">Galley dressing recipe</p>
           <h1 id="recipe-title">Avocado Caesar Dressing &amp; Dip</h1>
-          <button class="button primary print-recipe" type="button">Print recipe</button>
+          <button class="button primary print-recipe" type="button" onclick="window.print()">Print recipe</button>
           <p class="recipe-deck">A creamy, bright Caesar-style blend with avocado, Greek-style yogurt, anchovy, capers, lemon, Dijon, Pecorino Romano, and extra-virgin olive oil.</p>
           <div class="recipe-meta" aria-label="Recipe details">
             <span><strong>Ready in</strong> 20 minutes</span>

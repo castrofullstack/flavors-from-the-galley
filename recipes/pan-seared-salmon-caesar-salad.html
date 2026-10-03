@@ -2,11 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pan-Seared Salmon Caesar Salad | Flavors from the Galley</title>
     <meta name="description" content="Crisp romaine, a sharp homemade Caesar dressing, Parmesan, and a beautifully seared salmon fillet. Serves 4 in 25 minutes.">
     <link rel="stylesheet" href="../styles.css?v=navigation-20261003">
-      <script src="../print-recipe.js" defer></script>
+      <style>
+      @media print {
+        .print-recipe, .main-nav, .recipe-photo, .recipe-note-section, .site-footer { display: none !important; }
+        html, body { height: auto !important; overflow: visible !important; }
+        main, .recipe-hero, .recipe-layout, .tips-section { display: block !important; min-height: 0 !important; height: auto !important; }
+        .section, .recipe-hero { padding: 0 !important; background: white !important; }
+        .ingredients-panel, .method-panel { display: block !important; break-inside: auto !important; page-break-inside: auto !important; padding: 0 !important; }
+        .recipe-layout { margin-top: 0.18in !important; }
+        .recipe-copy h1 { font-size: 26pt !important; line-height: 1.1 !important; max-width: none !important; }
+        .ingredient-list, .method-list, .tips-list { display: block !important; }
+        .tips-list { columns: auto !important; }
+        .ingredient-list li, .method-list li { break-inside: auto !important; page-break-inside: auto !important; }
+        h2, h3 { break-after: avoid !important; }
+      }
+    </style>
   </head>
   <body>
     <header class="site-header">
@@ -26,7 +41,7 @@
         <div class="recipe-copy">
           <p class="eyebrow">From the recipe log</p>
           <h1 id="recipe-title">Pan-Seared Salmon Caesar Salad</h1>
-          <button class="button primary print-recipe" type="button">Print recipe</button>
+          <button class="button primary print-recipe" type="button" onclick="window.print()">Print recipe</button>
           <p class="recipe-deck"><strong>Crisp romaine, a sharp homemade Caesar dressing, Parmesan, and a beautifully seared salmon fillet.</strong></p>
           <p class="recipe-deck">This is Caesar salad turned into dinner. The salmon gets a hard sear in a hot pan until the outside develops a deep, flavorful crust while the center stays tender. Serve it right over cold, crisp Caesar salad with plenty of Parmesan and a squeeze of lemon.</p>
           <div class="recipe-meta" aria-label="Recipe details">
