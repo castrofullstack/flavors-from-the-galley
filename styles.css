@@ -945,3 +945,20 @@ html { scroll-behavior: auto; scroll-padding-top: 9rem; }
   .main-nav { column-gap: 0.8rem; row-gap: 0; }
 }
 @media print { .brand-mark { flex: 0 0 0.72in; } }
+
+/* Home cooking logo: preserve the full wordmark and tagline. */
+@media screen {
+  .brand-mark { width: 10rem; flex: 0 0 10rem; aspect-ratio: auto; }
+  .brand-mark img { width: 100%; height: auto; }
+  .site-footer img { width: 9rem; aspect-ratio: auto; height: auto; }
+}
+@media screen and (max-width: 600px) {
+  .brand-mark { width: 8rem; flex-basis: 8rem; }
+  .site-header { gap: 0.6rem; }
+  .main-nav { font-size: 0.72rem; column-gap: 0.65rem; }
+  .site-footer { flex-wrap: wrap; }
+}
+@media print {
+  .brand-mark { width: 1.1in; flex: 0 0 1.1in; aspect-ratio: auto; }
+  .brand-mark img { height: auto; }
+}
