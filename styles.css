@@ -57,7 +57,8 @@ img {
 }
 
 .brand-mark {
-  width: 4.1rem;
+  width: 5.1rem;
+  flex: 0 0 5.1rem;
   aspect-ratio: 1;
 }
 
@@ -937,3 +938,10 @@ html { scroll-behavior: auto; scroll-padding-top: 9rem; }
 .kitchen-browse:hover { background: #0a416e; }
 @media (max-width: 900px) { .kitchen-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 600px) { .kitchen-grid { grid-template-columns: 1fr; } #from-my-kitchen .section-heading { align-items: start; flex-direction: column; } }
+
+@media screen and (max-width: 600px) {
+  .site-header { gap: 0.75rem; padding-top: 0.55rem; padding-bottom: 0.55rem; }
+  .brand-mark { width: 4.6rem; flex-basis: 4.6rem; }
+  .main-nav { column-gap: 0.8rem; row-gap: 0; }
+}
+@media print { .brand-mark { flex: 0 0 0.72in; } }
