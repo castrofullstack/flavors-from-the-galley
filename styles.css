@@ -962,3 +962,11 @@ html { scroll-behavior: auto; scroll-padding-top: 9rem; }
   .brand-mark { width: 1.1in; flex: 0 0 1.1in; aspect-ratio: auto; }
   .brand-mark img { height: auto; }
 }
+
+/* Light backing keeps the navy logo readable on the dark footer. */
+.site-footer img {
+  background: #ffffff;
+  padding: 0.6rem;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
