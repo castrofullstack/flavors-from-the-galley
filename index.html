@@ -11,7 +11,7 @@
       name="description"
       content="Flavors from the Galley serves coastal comfort, quality-assured provisions, and chef-led galley favorites."
     >
-    <link rel="stylesheet" href="styles.css?v=navigation-20261003">
+    <link rel="stylesheet" href="styles.css?v=kitchen-20261014">
     <style>
       .hero {
         position: relative;
@@ -92,7 +92,7 @@
         <img src="assets/flavors_from_the_galley_logo.png?v=f7646046e6e9" alt="Flavors from the Galley logo">
       </a>
       <nav class="main-nav" aria-label="Main navigation">
-        <a href="/#menu">Menu</a>
+        <a href="/#from-my-kitchen">From My Kitchen</a>
         <a href="/recipes/">Recipes</a>
         <a href="/#story">Story</a>
         <a href="/#contact">Contact</a>
@@ -119,7 +119,7 @@
             generous servings, and a last bite worth remembering.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="/#menu">View menu</a>
+            <a class="button primary" href="/#from-my-kitchen">From my kitchen</a>
             <a class="button secondary" href="mailto:flavorsfromthegalley@gmail.com">Start an inquiry</a>
           </div>
         </div>
@@ -183,41 +183,50 @@
         <div class="pillar">
           <span>02</span>
           <strong>Prepared with care</strong>
-          <p>Menus made for dependable service, easy hosting, and repeat cravings.</p>
+          <p>Recipes tested, adjusted, and made again in my little galley kitchen.</p>
         </div>
         <div class="pillar">
           <span>03</span>
-          <strong>Built to grow</strong>
-          <p>Ready for pop-ups, catering, recipes, products, or online ordering.</p>
+          <strong>Made to share</strong>
+          <p>Good food for the people you want sitting around your table.</p>
         </div>
       </section>
 
-      <section class="section menu-section" id="menu">
+      <section class="section menu-section" id="from-my-kitchen" aria-labelledby="kitchen-title">
+        <span id="menu" aria-hidden="true"></span>
         <div class="section-heading">
-          <p class="eyebrow">First draft menu direction</p>
-          <h2>From the Galley</h2>
+          <div><p class="eyebrow">A few favorites to try</p><h2 id="kitchen-title">From My Kitchen</h2></div>
+          <a class="button kitchen-browse" href="/recipes/">Browse all recipes</a>
         </div>
-        <div class="menu-grid">
-          <article class="menu-item">
-            <p class="menu-kicker">Signature</p>
-            <h3>Anchor Plate</h3>
-            <p>Grilled catch, citrus herbs, buttered rice, market vegetables.</p>
-          </article>
-          <article class="menu-item">
-            <p class="menu-kicker">Comfort</p>
-            <h3>Harbor Chowder</h3>
-            <p>Creamy seafood stew, roasted corn, potatoes, herbs, toasted bread.</p>
-          </article>
-          <article class="menu-item">
-            <p class="menu-kicker">Shareable</p>
-            <h3>Galley Board</h3>
-            <p>Smoked fish spread, pickled vegetables, crackers, olives, lemon.</p>
-          </article>
-          <article class="menu-item">
-            <p class="menu-kicker">Sweet</p>
-            <h3>Captain's Cake</h3>
-            <p>Rum-kissed spice cake, salted caramel, vanilla cream.</p>
-          </article>
+        <div class="menu-grid kitchen-grid">
+          <a class="menu-item kitchen-card" href="/recipes/pan-seared-salmon-caesar-salad.html?v=ingredient-steps-20261014">
+            <img src="/assets/pan-seared-salmon-caesar-salad.jpg" alt="Pan-seared salmon over Caesar salad with a lemon wedge" loading="lazy" width="640" height="400">
+            <p class="menu-kicker">Weeknight dinner</p>
+            <h3>Pan-Seared Salmon Caesar Salad</h3>
+            <p>Warm, crisp-edged salmon over cold romaine with homemade Caesar dressing.</p>
+            <span class="kitchen-open">View recipe →</span>
+          </a>
+          <a class="menu-item kitchen-card" href="/recipes/mole-style-turkey-chili.html?v=ingredient-steps-20261014">
+            <img src="/assets/mole-style-turkey-chili.jpg" alt="Turkey chili topped with white cheddar and cilantro" loading="lazy" width="640" height="400">
+            <p class="menu-kicker">A pot to share</p>
+            <h3>Mole-Style Turkey Chili</h3>
+            <p>Turkey, lentils, and sweet potatoes with a rich porter and dark chocolate finish.</p>
+            <span class="kitchen-open">View recipe →</span>
+          </a>
+          <a class="menu-item kitchen-card" href="/recipes/midnight-gold-shepherds-pie.html?v=ingredient-steps-20261014">
+            <img src="/assets/midnight-gold-shepherds-pie.jpg" alt="Shepherd’s pie with golden mashed potato topping" loading="lazy" width="640" height="400">
+            <p class="menu-kicker">Comfort food</p>
+            <h3>Midnight Gold Shepherd’s Pie</h3>
+            <p>A savory beef filling beneath golden Yukon Gold and sweet potato mash.</p>
+            <span class="kitchen-open">View recipe →</span>
+          </a>
+          <a class="menu-item kitchen-card" href="/recipes/classic-caramel-flan.html?v=ingredient-steps-20261014">
+            <img src="/assets/classic-caramel-flan.jpg" alt="Caramel flan on a white platter with caramel sauce" loading="lazy" width="640" height="400">
+            <p class="menu-kicker">Something sweet</p>
+            <h3>Classic Caramel Flan</h3>
+            <p>Silky baked custard with deep amber caramel, made ahead for the table.</p>
+            <span class="kitchen-open">View recipe →</span>
+          </a>
         </div>
       </section>
 
