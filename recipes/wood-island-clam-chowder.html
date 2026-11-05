@@ -6,6 +6,27 @@
     <title>Wood Island Clam Chowder | Flavors from the Galley</title>
     <meta name="description" content="Cold-infused clam chowder with russet potatoes, whole baby clams, fresh thyme, and light cream.">
     <link rel="stylesheet" href="../styles.css?v=recipe-hub-20260527">
+    <style>
+      @media screen {
+        .chowder-meta {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          overflow: hidden;
+          border: 1px solid var(--line);
+          border-radius: 8px;
+        }
+
+        .chowder-meta span {
+          min-height: 0;
+          padding: 0.75rem;
+        }
+      }
+
+      @media print {
+        .chowder-meta {
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+      }
+    </style>
   </head>
   <body>
     <header class="site-header">
@@ -26,12 +47,13 @@
           <p class="eyebrow">From the recipe log</p>
           <h1 id="recipe-title">Wood Island Clam Chowder</h1>
           <p class="recipe-deck">Clean, Potent, Naturally Infused, and Herb-Enriched</p>
-          <div class="recipe-meta" aria-label="Recipe details">
+          <div class="recipe-meta chowder-meta" aria-label="Recipe details">
             <span><strong>Prep time</strong> 45 minutes (includes potato cooling)</span>
             <span><strong>Cold infusion</strong> 1–24 hours (essential)</span>
             <span><strong>Cook time</strong> About 25 minutes</span>
             <span><strong>Yield</strong> 4–6 main course servings or up to 8 appetizer cups</span>
           </div>
+          <button class="button primary print-recipe" type="button" onclick="window.print()">Print recipe</button>
         </div>
         <figure class="recipe-photo">
           <img src="../assets/wood-island-clam-chowder.png" width="1536" height="1024" style="height: auto; aspect-ratio: auto;" alt="Creamy clam chowder topped with chives, with oyster crackers and a Wood Island Clam Chowder sign behind the bowl">
